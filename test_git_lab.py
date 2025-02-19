@@ -12,6 +12,10 @@ import math
 
 class TestUtils(unittest.TestCase):
 
+    def test_add_numbers(self):
+        self.assertEqual(add_numbers(2, 3), 5)
+        self.assertEqual(add_numbers(-1, 1), 0)
+
     def test_calculate_circle_area(self):
         self.assertAlmostEqual(calculate_circle_area(0), 0)
         self.assertAlmostEqual(calculate_circle_area(1), math.pi)
@@ -48,11 +52,6 @@ class TestUtils(unittest.TestCase):
         self.assertFalse(is_prime(30))
         self.assertTrue(is_prime(31))
         self.assertFalse(is_prime(100))
-
-    def test_add_numbers(self):
-        self.assertEqual(add_numbers(2, 3), 5)
-        self.assertEqual(add_numbers(-1, 1), 0)
-
-
+        
 if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,5 @@
 import math
 
-
 def calculate_circle_area(radius):
     """
     Calculate the area of a circle given its radius.
