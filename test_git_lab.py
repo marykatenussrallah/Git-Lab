@@ -5,15 +5,21 @@ from git_lab import (
     is_palindrome,
     calculate_triangle_area,
     is_prime,
+    add_numbers,
 )
 import math
 
+
 class TestUtils(unittest.TestCase):
+
+    def test_add_numbers(self):
+        self.assertEqual(add_numbers(2, 3), 5)
+        self.assertEqual(add_numbers(-1, 1), 0)
 
     def test_calculate_circle_area(self):
         self.assertAlmostEqual(calculate_circle_area(0), 0)
         self.assertAlmostEqual(calculate_circle_area(1), math.pi)
-        self.assertAlmostEqual(calculate_circle_area(2.5), math.pi * (2.5 ** 2))
+        self.assertAlmostEqual(calculate_circle_area(2.5), math.pi * (2.5**2))
         with self.assertRaises(ValueError):
             calculate_circle_area(-1)
 
@@ -47,5 +53,6 @@ class TestUtils(unittest.TestCase):
         self.assertTrue(is_prime(31))
         self.assertFalse(is_prime(100))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
