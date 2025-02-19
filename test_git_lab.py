@@ -53,7 +53,5 @@ class TestUtils(unittest.TestCase):
         self.assertTrue(is_prime(31))
         self.assertFalse(is_prime(100))
         
-
-
 if __name__ == "__main__":
     unittest.main()

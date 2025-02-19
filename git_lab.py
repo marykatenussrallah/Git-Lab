@@ -1,10 +1,5 @@
 import math
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 7cbe4b9ba0602ea46361fcdc419eda98b94bf91d
 def calculate_circle_area(radius):
     """
     Calculate the area of a circle given its radius.
@@ -72,13 +67,4 @@ def is_prime(n):
 
 def add_numbers(a, b):
     """Returns the sum of two numbers."""
-<<<<<<< HEAD
     return a + b
-
-
-def test_add_numbers(self):
-    self.assertEqual(add_numbers(2, 3), 5)
-    self.assertEqual(add_numbers(-1, 1), 0)
-=======
-    return a - b
->>>>>>> 7cbe4b9ba0602ea46361fcdc419eda98b94bf91d
